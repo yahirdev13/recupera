@@ -1,0 +1,17 @@
+services:
+  ordinario:
+    build:
+      context: ./ordinario
+      dockerfile: Dockerfile
+    container_name: Ordinario
+    ports:
+      - "9300:80"
+
+  recupera:
+    build:
+      context: ./recupera
+      dockerfile: Dockerfile
+    container_name: Recupera
+    ports:
+      - "9400:80"
+
